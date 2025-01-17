@@ -10,7 +10,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 27
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -83,7 +83,7 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.sahil"
                 artifactId = "media-editor"
-                version = "1.0.0"
+                version = "1.0.1"
             }
         }
     }
