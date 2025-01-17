@@ -87,7 +87,7 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.sahil"
                 artifactId = "media-editor"
-                version = "1.0.4"
+                version = "1.0.5"
             }
         }
     }
