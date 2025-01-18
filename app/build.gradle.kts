@@ -37,7 +37,7 @@ android {
 dependencies {
 
 
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -80,15 +80,4 @@ dependencies {
     implementation(project(":videcrop"))
 }
 
-publishing {
-    publications {
-        register<MavenPublication>("release") {
-            afterEvaluate {
-                from(components["release"])
-                groupId = "com.github.sahil"
-                artifactId = "media-editor"
-                version = "1.0.5"
-            }
-        }
-    }
-}
+

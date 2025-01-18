@@ -1,4 +1,4 @@
-package com.meetfriend.app.utils
+package com.mediaeditor.app.utils
 
 object Constant {
     const val MESSAGE_TYPE_TEXT = "text"

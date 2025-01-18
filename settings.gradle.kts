@@ -7,6 +7,9 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+        flatDir {
+            dirs("libs")
+        }
         mavenCentral()
         gradlePluginPortal()
         maven { url = uri("https://jitpack.io") }
@@ -17,6 +20,9 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
+        flatDir {
+            dirs("libs")
+        }
         maven { url = uri("https://jitpack.io") }
         maven { url = uri("https://maven.arthenica.com/release") }
         mavenCentral()
